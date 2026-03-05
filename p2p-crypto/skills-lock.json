@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "rand-anti-slop": {
+      "source": "smithery.ai",
+      "sourceType": "well-known",
+      "computedHash": "ae23263f6a3e6b7f0f3ef13afff234fe7030c571d1210dd7e01ad1548dbe2b7a"
+    }
+  }
+}
