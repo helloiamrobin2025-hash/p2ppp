@@ -38,7 +38,7 @@ export default function LoginPage() {
       return;
     }
 
-    await sendEmail({
+    sendEmail({
       templateKey: "login",
       templateParams: {
         to_email: email,
@@ -49,7 +49,9 @@ export default function LoginPage() {
       },
     });
 
-    router.push(searchParams.get("redirect") || "/portfolio");
+    const destination = searchParams.get("redirect") || "/markets";
+    router.refresh();
+    router.push(destination);
   };
 
   return (
